@@ -19,7 +19,7 @@ import com.mindtree.utility.logger;
 
 public class List_of_products_page
 {
-	public static Logger log=LogManager.getLogger( TestRunner.class.getName());
+	public static Logger log=LogManager.getLogger(List_of_products_page.class.getName());
 	public static boolean product_search(WebDriver driver,String value)
 	{
 		//UI_list_products
@@ -223,8 +223,4 @@ public class List_of_products_page
 		Assert.assertEquals(name, "Urban Ladder - Furniture Store");
 	}
 	
-	
-		
 	}
-
-	

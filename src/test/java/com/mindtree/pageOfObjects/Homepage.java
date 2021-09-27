@@ -19,7 +19,7 @@ import com.mindtree.utility.logger;
 
 public class Homepage 
 {
-	public static Logger log=LogManager.getLogger( TestRunner.class.getName());
+	public static Logger log=LogManager.getLogger(Homepage .class.getName());
     public static boolean login_page(WebDriver driver, String email_id, String password) throws InterruptedException
     {
     	Thread.sleep(10000);

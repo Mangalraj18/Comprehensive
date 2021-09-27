@@ -36,7 +36,9 @@ public void login()
 {
 	try
 	{
-	Homepage.login_page(driver,Propertyfilereader.propfile().getProperty("email_id"),Propertyfilereader.propfile().getProperty("password"));
+	
+		Homepage.login_page(driver,Propertyfilereader.propfile().getProperty("email_id"),Propertyfilereader.propfile().getProperty("password"));
+	System.out.println("Logged in successfully");
 	}
 	catch(Exception e)
 	{
@@ -56,6 +58,7 @@ public void add_to_cart(String product_name,String product_brand_name) throws In
     List_of_products_page.product_search(driver,product_brand_name);	
     List_of_products_page.addtocart(driver);
     logger.loginfo(log, "Product Successfully added to cart");
+    System.out.println("Product successfully added to cart");
 	}
 	catch(Exception e)
 	{
@@ -75,6 +78,7 @@ public void offers() throws InterruptedException
 	Thread.sleep(1000);
 	List_of_products_page.low_high(driver);
 	logger.loginfo(log, "Product successfully filtered");
+	System.out.println("Price filtered");
 	}
 	catch(Exception e)
 	{
@@ -95,6 +99,7 @@ public void moveto_window_homepage(String product_name,String product_brand_name
     List_of_products_page.move_to__addtocart_page(driver);
     List_of_products_page.validation_title(driver);
     logger.loginfo(log, "Grabbed the price of product and returned to homepage");
+    System.out.println("Prices is displayed for this product and user returned to homepage");
 	}
 	catch(Exception e)
 	{
@@ -114,6 +119,7 @@ public void stores_offline_address() throws InterruptedException
    List_of_products_page.stores_map(driver);
    List_of_products_page.google_location(driver);
    logger.loginfo(log, "Google location has showed for particular location");
+   System.out.println("Google map is displayed");
 	}
 	catch(Exception e)
 	{
@@ -133,6 +139,7 @@ public void payment_page(String product_name,String product_brand_name) throws I
     List_of_products_page.product_search(driver,product_brand_name);	
     List_of_products_page.addtocart_address(driver);
     logger.loginfo(log,"Payment page has showed");
+    System.out.println("Payment page is displayed");
 	}
 	catch(Exception e)
 	{
@@ -149,6 +156,7 @@ public void customer_stories()
 	Homepage.login_page(driver,Propertyfilereader.propfile().getProperty("email_id"),Propertyfilereader.propfile().getProperty("password"));
 	Homepage.user_stories_(driver);
 	List_of_products_page.user_stories_count(driver);
+	System.out.println("Customer stories count is displayed");
 	}
 	catch(Exception e)
 	{
@@ -169,6 +177,7 @@ public void wishlist() throws InterruptedException
     Homepage.child(driver);
     Homepage.add_wish(driver);
     logger.loginfo(log, "Produt added to wishlist");
+    System.out.println("Product successfully added to wishlist");
 	}
 	catch(Exception e)
 	{
@@ -183,6 +192,7 @@ public void subscribe() throws InterruptedException
 	{
 	Homepage.login_page(driver,Propertyfilereader.propfile().getProperty("email_id"),Propertyfilereader.propfile().getProperty("password"));
     Homepage.subscribe(driver,Propertyfilereader.propfile().getProperty("email_id"));
+    System.out.println("Subscribed for valid email address");
 	}
 	catch(Exception e)
 	{
@@ -201,6 +211,7 @@ public void subscribe() throws InterruptedException
 		List_of_products_page.andriod_button(driver);
 		List_of_products_page.verify_android(driver);
 		logger.loginfo(log, "Andriod app is clicked");
+		System.out.println("Andriod app and app store is downloaded");
 		}
 		catch(Exception e)
 		{
