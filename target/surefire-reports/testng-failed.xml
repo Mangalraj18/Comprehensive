@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="com.mindtree.runner.TestRunner">
+        <methods>
+          <include name="subscribe"/>
+          <include name="wishlist"/>
+          <include name="load_browser"/>
+          <include name="offers"/>
+          <include name="compare"/>
+          <include name="close_browser"/>
+          <include name="stores_offline_address"/>
+          <include name="moveto_window_homepage"/>
+          <include name="payment_page"/>
+          <include name="add_to_cart" invocation-numbers="0"/>
+          <include name="customer_stories"/>
+        </methods>
+      </class> <!-- com.mindtree.runner.TestRunner -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

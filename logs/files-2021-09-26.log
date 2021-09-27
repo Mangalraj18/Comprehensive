@@ -1,0 +1,6 @@
+21:26:56.320 [main] INFO  com.mindtree.runner.TestRunner - Login successfully
+21:27:00.356 [main] INFO  com.mindtree.runner.TestRunner - Product searched successfully
+21:27:01.178 [main] INFO  com.mindtree.runner.TestRunner - Product finded and clicked successfully
+21:27:04.711 [main] INFO  com.mindtree.runner.TestRunner - Product is added to cart successfully
+21:27:05.013 [main] ERROR com.mindtree.runner.TestRunner - Product not added to cart
+22:49:10.701 [main] INFO  com.mindtree.runner.TestRunner - Login successfully
